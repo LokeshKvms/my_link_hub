@@ -1,0 +1,6 @@
+[build]
+  publish = "static"
+  command = "composer install --no-dev && php please ssg:generate"
+
+[context.production.environment]
+  PHP_VERSION = "8.4"
